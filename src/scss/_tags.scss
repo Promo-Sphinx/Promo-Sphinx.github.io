@@ -1,0 +1,28 @@
+@use './vars'; 
+@use './mixin'; 
+:active + .infos {
+    visibility:visible;
+    color: vars.$font-color-tags;
+    background-color: rgb(209, 172, 117);
+    border: 1px solid rgb(58, 57, 53);
+    opacity: 0.9;
+    text-align: left;
+    position: absolute;
+    border-radius: 5px;
+    width: 15rem;
+    height: 15rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    z-index: 1;
+    overflow-y: auto;
+    
+    @include mixin.small {
+        font-size: 0.5rem;
+        width: 5rem;
+        height: 10rem;
+    }
+    }
+.infos {
+        visibility:hidden;
+        position: absolute;
+    }

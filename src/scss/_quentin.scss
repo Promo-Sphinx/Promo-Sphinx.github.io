@@ -1,0 +1,24 @@
+@use './vars';
+@use './mixin';
+
+// Change New-name par ton prénom
+.quentin {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: 'fette', sans-serif;
+    color: vars.$font-color-tags;
+    font-size: 15px;
+    background-color:rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    top: 11%;
+    left: 50%;
+
+    @include mixin.medium {
+        font-size: 0.7em;
+    }
+    
+    @include mixin.small {
+        font-size: 0;
+    }
+}

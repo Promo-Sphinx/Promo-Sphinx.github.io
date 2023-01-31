@@ -1,0 +1,16 @@
+@use './mixin';
+
+.icons {
+    width: 2.5rem;
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include mixin.medium {
+        width: 2rem;
+    }
+
+    @include mixin.small {
+        width: 1.5rem;
+    }
+    }

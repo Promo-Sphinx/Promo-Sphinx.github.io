@@ -1,0 +1,35 @@
+@use './vars';
+@use './mixin';
+
+
+
+
+.julien {
+    display: flex;
+    flex-direction: column;
+    /* je t'ai rajouter align pour centrer icon avec  le prénom */
+    align-items:center;
+    position: absolute;
+    font-family: 'fette';
+    color: vars.$font-color-tags;
+    /* la vcaleur était en px je l'ai mis en em */
+    font-size: 0.9em;
+    background-color:rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    top: 55%;
+    left: 41%;
+
+    @include mixin.medium {
+        font-size: 0.7em;
+        top: 56%;
+        left: 40%;
+        
+    }
+    
+    @include mixin.small {
+        font-size: 0;
+        top: 57%;
+        left: 39%;
+    }
+}
+

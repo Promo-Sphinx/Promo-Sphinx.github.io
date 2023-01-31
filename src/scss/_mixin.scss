@@ -1,0 +1,13 @@
+
+
+@mixin small {
+    @media screen and (max-width: 50rem) {
+        @content;
+    }
+}
+/* j'ai augmenté la valeur de 65->75 pour une réaction plus tot */
+@mixin medium {
+    @media screen and (max-width:75rem) {
+        @content;
+    }
+}

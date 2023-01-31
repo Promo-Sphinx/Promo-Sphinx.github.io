@@ -1,0 +1,29 @@
+@use'./vars';
+
+
+.container {
+    background-color: vars.$background;
+    position: relative;
+}
+
+.main {
+    
+    background-image: url(/src/img/Sphinx\ 2.0.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+
+    &__map {
+        width: 40%;
+        
+        opacity: 0.95;
+    }
+}
+
+
+
+
+

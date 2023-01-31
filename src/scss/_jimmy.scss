@@ -1,0 +1,24 @@
+@use './vars';
+@use './mixin';
+.jimmy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: 'fette', sans-serif;
+    color: vars.$font-color-tags;
+    font-size: 1em;
+    top: 23%;
+    left: 50%;
+    background-color:rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+
+    @include mixin.medium {
+        font-size: 0.7em;
+    }
+    
+    @include mixin.small {
+        font-size: 0;
+    }
+
+
+}
