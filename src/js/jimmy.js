@@ -1,3 +1,4 @@
+console.log('jimmy');
 function on() {
     document.getElementById("jimmy").style.display = "block";
   }
