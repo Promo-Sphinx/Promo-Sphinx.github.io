@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="./js/global.js" type="module" defer></script>
 	<link rel="stylesheet" href="./scss/index.scss">
-	<script defer src="./js/julien.js"></script>
+
 	<title>Map Sphinx</title>
 </head>
 
@@ -17,17 +17,6 @@
 
 			<img src="./img/146299-d2ab74.svg" alt="" class="main__map">
 
-			
-
-			<button class="jimmy">
-				<img class="icons"
-					src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/null/external-egyptian-egypt-icongeek26-outline-icongeek26-1.png" />jimmy
-				<div class="infos">
-					<p>Name: jimmy<img src="/src/img/muff'.gif" alt=""></p>
-					<p>Ville: Boulogne-Billancourt 92</p>
-					<p>infos: Je deteste les Muffins </p>
-				</div>
-			</button>
 
 
 			<button class="philippe">
@@ -149,22 +138,41 @@
 
 			<div id="julien" onclick="off()">
 				<div id="text">
-				  <p>LEMBRAS</p>
-				  <p>Je n'aime pas le chocolat</p>
-				  <p>Mais je dis Chocolatine</p>
-				 	  
+					<p>LEMBRAS</p>
+					<p>Je n'aime pas le chocolat</p>
+					<p>Mais je dis Chocolatine</p>
+
 				</div>
-			  </div>
-			  <div class="julien">
-				<img class="icons" src="https://img.icons8.com/external-dreamcreateicons-detailed-outline-dreamcreateicons/64/null/external-anubis-museum-dreamcreateicons-detailed-outline-dreamcreateicons.png" />
-				<button onclick="on()">JULIEN</button>
-			  </div>
-			  
-			  
+			</div>
+			<div class="julien">
+				<img onclick="on()" class="icons"
+					src="https://img.icons8.com/external-dreamcreateicons-detailed-outline-dreamcreateicons/64/null/external-anubis-museum-dreamcreateicons-detailed-outline-dreamcreateicons.png" />
+				<button>JULIEN</button>
+			</div>
+
+			<div id="jimmy" onclick="off()">
+				<div id="text">
+					<p>Name: jimmy<img src="/src/img/muff'.gif"></p>
+					<p>Ville: Boulogne-Billancourt 92</p>
+					<p>infos: Je deteste les Muffins </p>
+
+				</div>
+			</div>
+			<div class="jimmy">
+				<img onclick="on()" class="icons"
+					src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/null/external-egyptian-egypt-icongeek26-outline-icongeek26-1.png" />
+				<button>Jimmy</button>
+			</div>
+
 
 
 		</article>
 	</div>
+
+	<script src="./js/julien.js"></script>
+	<script src="./js/jimmy.js"></script>
+
+
 </body>
 
 </html>
