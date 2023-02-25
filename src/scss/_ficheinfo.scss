@@ -1,0 +1,18 @@
+@use './vars';
+@use './mixin';
+
+.ficheinfo{
+    position: absolute;
+    background-color:vars.$font-color-tags ;
+    border-radius: 1rem;
+    font-family: 'fette', sans-serif;
+    width: 25rem;
+    padding: 0.5rem;
+
+
+    
+
+}
+.cacher{
+    display: none;
+}

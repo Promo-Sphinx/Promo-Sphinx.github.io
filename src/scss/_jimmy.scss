@@ -1,54 +1,29 @@
 @use './vars';
 @use './mixin';
+
 .jimmy {
     display: flex;
     flex-direction: column;
     position: absolute;
-    font-family: 'fette', sans-serif;
-    color: vars.$font-color-tags;
-    font-size: 1em;
     top: 23%;
     left: 50%;
-    background-color:rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
+    
 
     @include mixin.medium {
         font-size: 0.7em;
     }
-    
+
     @include mixin.small {
         font-size: 0;
     }
-    button{
-        background-color:transparent;
-        border-color: transparent; 
+
+    button {
+        background-color: transparent;
+        border-color: transparent;
         color: vars.$font-color-tags;
-         font-family: 'fette';
-         font-size: 0.9em;
+        font-family: 'fette';
+        font-size: 0.9em;
 
     }
 
 }
-
-#jimmy {
-    position: fixed;
-    display: none;
-    
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 253, 253, 0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  #text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size:2em;
-    color: vars.$font-color-tags;
-    transform: translate(-50%,-50%);
-    
-  }
