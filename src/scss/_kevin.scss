@@ -5,12 +5,8 @@
 .kevin {
     display: flex;
     flex-direction: column;
+    align-items:center;
     position: absolute;
-    font-family: 'fette', sans-serif;
-    color: vars.$font-color-tags;
-    font-size: 15px;
-    background-color:rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
     top: 58.5%;
     left: 54%;
 
@@ -21,4 +17,5 @@
     @include mixin.small {
         font-size: 0;
     }
+
 }

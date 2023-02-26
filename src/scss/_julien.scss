@@ -1,9 +1,6 @@
 @use './vars';
 @use './mixin';
 
-
-
-
 .julien {
     display: flex;
     flex-direction: column;
@@ -24,13 +21,6 @@
         top: 57%;
         left: 39%;
     }
-    button{
-        background-color:transparent;
-        border-color: transparent; 
-        color: vars.$font-color-tags;
-         font-family: 'fette';
-         font-size: 0.9em;
 
-    }
 }
 
