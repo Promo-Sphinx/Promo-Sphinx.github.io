@@ -1,16 +1,21 @@
 @use './vars';
 @use './mixin';
+// Card backrgound color nav
 
 .ficheinfo{
+	border: 1px solid white;
+	color: white;
     position: absolute;
-    background-color:vars.$font-color-tags ;
+    background-color:rgb(18, 18, 26);
     border-radius: 1rem;
     font-family: 'fette', sans-serif;
     width: 25rem;
     padding: 0.5rem;
     z-index: 10;
-
+	box-shadow: 0 20px 50px rgb(23, 32, 90);
+	border: 3px solid #596088;
 }
 .cacher{
     display: none;
 }
+
